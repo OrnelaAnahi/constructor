@@ -8,9 +8,6 @@ const app = express()
 
 const PORT = process.env.PORT || 8080
 
-const path = require('path')
-const res = require('express/lib/response')
-
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * ((max + 1) - min)) + min;
