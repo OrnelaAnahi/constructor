@@ -92,7 +92,7 @@ const productosRandom = async ()=>{
   const TLProd = await file1.getAll()
   const mayor = TLProd.length
   app.get('/productosRandom', (req, res)=>{
-    numeroRandom = getRandomInt(1, mayor)
+    const numeroRandom = getRandomInt(1, mayor)
     let bsqDeNR = TLProd.find(product => product.id == numeroRandom)
     res.send(bsqDeNR)
   })
